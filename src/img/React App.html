@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<!-- saved from url=(0022)http://localhost:3000/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <link rel="icon" href="http://localhost:3000/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="Web site created using create-react-app">
+    <link rel="apple-touch-icon" href="http://localhost:3000/logo192.png">
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="http://localhost:3000/manifest.json">
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer="" src="./React App_files/bundle.js.téléchargement"></script><style>body {
+  font-family: 'Rasa', serif;
+  font-weight: 300;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+button {
+  background: none;
+  border: 1px solid black;
+  padding: 0.5rem 1rem;
+  font-family: 'Barlow', sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.text-important {
+  color: lightblue;
+  font-size: 45px;
+}
+
+/* Header */
+
+header {
+  z-index: 1;
+  display: flex;
+  position: sticky;
+  top: 0;
+  background: white;
+  justify-content: space-between;
+  padding: 0 20px;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+/*header > ul */
+.navmenu {
+  list-style: none;
+  display: flex;
+  width: 20%;
+  justify-content: space-around;
+}
+
+.navmenu a:hover {
+  color: lightblue;
+  text-decoration: underline;
+}
+
+/* section 1   */
+#about-me {
+  display: flex;
+  padding: 35px;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.168);
+}
+
+.avatar {
+  border-radius: 50%;
+}
+
+/*Projects  */
+#projects {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.168);
+}
+#projects h2 {
+  text-align: center;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.project-card {
+  cursor: pointer;
+  width: 300px;
+  /* margin : top/bottom  left/right  */
+  margin: 10px 15px;
+  border: 1px solid rgba(0, 0, 0, 0.171);
+}
+
+.project-card h3 {
+  padding-left: 10px;
+  margin-bottom: 0;
+}
+
+.project-card a {
+  color: rgb(61, 170, 221);
+  text-decoration: underline;
+}
+
+.project-card p {
+  padding: 10px;
+  margin: 0;
+}
+.project-card img {
+  width: 100%;
+}
+
+/*Contact me  */
+#contact {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.171);
+}
+#contact h2 {
+  text-align: center;
+}
+
+#contact form {
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
+  width: 50%;
+}
+#contact form > button {
+  align-self: center;
+  margin-top: 15px;
+}
+#contact form > button:hover {
+  color: white;
+  background-color: black;
+}
+/*Footer*/
+footer {
+  text-align: center;
+  background-color: black;
+  color: white;
+  padding: 15px;
+}
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9BcHAuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0UsMEJBQTBCO0VBQzFCLGdCQUFnQjtFQUNoQixTQUFTO0FBQ1g7QUFDQTs7Ozs7O0VBTUUsMkNBQTJDO0VBQzNDLGdCQUFnQjtFQUNoQix5QkFBeUI7QUFDM0I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsdUJBQXVCO0VBQ3ZCLG9CQUFvQjtFQUNwQixpQ0FBaUM7RUFDakMsZ0JBQWdCO0VBQ2hCLGVBQWU7RUFDZix5QkFBeUI7RUFDekIsbUJBQW1CO0FBQ3JCOztBQUVBO0VBQ0UscUJBQXFCO0VBQ3JCLFlBQVk7QUFDZDs7QUFFQTtFQUNFLGdCQUFnQjtFQUNoQixlQUFlO0FBQ2pCOztBQUVBLFdBQVc7O0FBRVg7RUFDRSxVQUFVO0VBQ1YsYUFBYTtFQUNiLGdCQUFnQjtFQUNoQixNQUFNO0VBQ04saUJBQWlCO0VBQ2pCLDhCQUE4QjtFQUM5QixlQUFlO0VBQ2YsbUJBQW1CO0VBQ25CLDJDQUEyQztBQUM3Qzs7QUFFQSxlQUFlO0FBQ2Y7RUFDRSxnQkFBZ0I7RUFDaEIsYUFBYTtFQUNiLFVBQVU7RUFDViw2QkFBNkI7QUFDL0I7O0FBRUE7RUFDRSxnQkFBZ0I7RUFDaEIsMEJBQTBCO0FBQzVCOztBQUVBLGdCQUFnQjtBQUNoQjtFQUNFLGFBQWE7RUFDYixhQUFhO0VBQ2IsNkJBQTZCO0VBQzdCLG1CQUFtQjtFQUNuQiw2Q0FBNkM7QUFDL0M7O0FBRUE7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUEsYUFBYTtBQUNiO0VBQ0UsNkNBQTZDO0FBQy9DO0FBQ0E7RUFDRSxrQkFBa0I7QUFDcEI7O0FBRUE7RUFDRSxhQUFhO0VBQ2IsZUFBZTtFQUNmLHVCQUF1QjtBQUN6Qjs7QUFFQTtFQUNFLGVBQWU7RUFDZixZQUFZO0VBQ1oscUNBQXFDO0VBQ3JDLGlCQUFpQjtFQUNqQixzQ0FBc0M7QUFDeEM7O0FBRUE7RUFDRSxrQkFBa0I7RUFDbEIsZ0JBQWdCO0FBQ2xCOztBQUVBO0VBQ0Usd0JBQXdCO0VBQ3hCLDBCQUEwQjtBQUM1Qjs7QUFFQTtFQUNFLGFBQWE7RUFDYixTQUFTO0FBQ1g7QUFDQTtFQUNFLFdBQVc7QUFDYjs7QUFFQSxlQUFlO0FBQ2Y7RUFDRSw2Q0FBNkM7QUFDL0M7QUFDQTtFQUNFLGtCQUFrQjtBQUNwQjs7QUFFQTtFQUNFLGFBQWE7RUFDYixzQkFBc0I7RUFDdEIsaUJBQWlCO0VBQ2pCLFVBQVU7QUFDWjtBQUNBO0VBQ0Usa0JBQWtCO0VBQ2xCLGdCQUFnQjtBQUNsQjtBQUNBO0VBQ0UsWUFBWTtFQUNaLHVCQUF1QjtBQUN6QjtBQUNBLFNBQVM7QUFDVDtFQUNFLGtCQUFrQjtFQUNsQix1QkFBdUI7RUFDdkIsWUFBWTtFQUNaLGFBQWE7QUFDZiIsInNvdXJjZXNDb250ZW50IjpbImJvZHkge1xuICBmb250LWZhbWlseTogJ1Jhc2EnLCBzZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDMwMDtcbiAgbWFyZ2luOiAwO1xufVxuaDEsXG5oMixcbmgzLFxuaDQsXG5oNSxcbmg2IHtcbiAgZm9udC1mYW1pbHk6ICdCYXJsb3cgQ29uZGVuc2VkJywgc2Fucy1zZXJpZjtcbiAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbn1cblxuYnV0dG9uIHtcbiAgYmFja2dyb3VuZDogbm9uZTtcbiAgYm9yZGVyOiAxcHggc29saWQgYmxhY2s7XG4gIHBhZGRpbmc6IDAuNXJlbSAxcmVtO1xuICBmb250LWZhbWlseTogJ0JhcmxvdycsIHNhbnMtc2VyaWY7XG4gIGZvbnQtd2VpZ2h0OiA2MDA7XG4gIGZvbnQtc2l6ZTogMTNweDtcbiAgdGV4dC10cmFuc2Zvcm06IHVwcGVyY2FzZTtcbiAgbGV0dGVyLXNwYWNpbmc6IDNweDtcbn1cblxuYSB7XG4gIHRleHQtZGVjb3JhdGlvbjogbm9uZTtcbiAgY29sb3I6IGJsYWNrO1xufVxuXG4udGV4dC1pbXBvcnRhbnQge1xuICBjb2xvcjogbGlnaHRibHVlO1xuICBmb250LXNpemU6IDQ1cHg7XG59XG5cbi8qIEhlYWRlciAqL1xuXG5oZWFkZXIge1xuICB6LWluZGV4OiAxO1xuICBkaXNwbGF5OiBmbGV4O1xuICBwb3NpdGlvbjogc3RpY2t5O1xuICB0b3A6IDA7XG4gIGJhY2tncm91bmQ6IHdoaXRlO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gIHBhZGRpbmc6IDAgMjBweDtcbiAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgYm9yZGVyLWJvdHRvbTogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC41KTtcbn1cblxuLypoZWFkZXIgPiB1bCAqL1xuLm5hdm1lbnUge1xuICBsaXN0LXN0eWxlOiBub25lO1xuICBkaXNwbGF5OiBmbGV4O1xuICB3aWR0aDogMjAlO1xuICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWFyb3VuZDtcbn1cblxuLm5hdm1lbnUgYTpob3ZlciB7XG4gIGNvbG9yOiBsaWdodGJsdWU7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG4vKiBzZWN0aW9uIDEgICAqL1xuI2Fib3V0LW1lIHtcbiAgZGlzcGxheTogZmxleDtcbiAgcGFkZGluZzogMzVweDtcbiAganVzdGlmeS1jb250ZW50OiBzcGFjZS1hcm91bmQ7XG4gIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuMTY4KTtcbn1cblxuLmF2YXRhciB7XG4gIGJvcmRlci1yYWRpdXM6IDUwJTtcbn1cblxuLypQcm9qZWN0cyAgKi9cbiNwcm9qZWN0cyB7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuMTY4KTtcbn1cbiNwcm9qZWN0cyBoMiB7XG4gIHRleHQtYWxpZ246IGNlbnRlcjtcbn1cblxuLnByb2plY3RzLWNvbnRhaW5lciB7XG4gIGRpc3BsYXk6IGZsZXg7XG4gIGZsZXgtd3JhcDogd3JhcDtcbiAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG59XG5cbi5wcm9qZWN0LWNhcmQge1xuICBjdXJzb3I6IHBvaW50ZXI7XG4gIHdpZHRoOiAzMDBweDtcbiAgLyogbWFyZ2luIDogdG9wL2JvdHRvbSAgbGVmdC9yaWdodCAgKi9cbiAgbWFyZ2luOiAxMHB4IDE1cHg7XG4gIGJvcmRlcjogMXB4IHNvbGlkIHJnYmEoMCwgMCwgMCwgMC4xNzEpO1xufVxuXG4ucHJvamVjdC1jYXJkIGgzIHtcbiAgcGFkZGluZy1sZWZ0OiAxMHB4O1xuICBtYXJnaW4tYm90dG9tOiAwO1xufVxuXG4ucHJvamVjdC1jYXJkIGEge1xuICBjb2xvcjogcmdiKDYxLCAxNzAsIDIyMSk7XG4gIHRleHQtZGVjb3JhdGlvbjogdW5kZXJsaW5lO1xufVxuXG4ucHJvamVjdC1jYXJkIHAge1xuICBwYWRkaW5nOiAxMHB4O1xuICBtYXJnaW46IDA7XG59XG4ucHJvamVjdC1jYXJkIGltZyB7XG4gIHdpZHRoOiAxMDAlO1xufVxuXG4vKkNvbnRhY3QgbWUgICovXG4jY29udGFjdCB7XG4gIGJvcmRlci1ib3R0b206IDFweCBzb2xpZCByZ2JhKDAsIDAsIDAsIDAuMTcxKTtcbn1cbiNjb250YWN0IGgyIHtcbiAgdGV4dC1hbGlnbjogY2VudGVyO1xufVxuXG4jY29udGFjdCBmb3JtIHtcbiAgZGlzcGxheTogZmxleDtcbiAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcbiAgbWFyZ2luOiAyMHB4IGF1dG87XG4gIHdpZHRoOiA1MCU7XG59XG4jY29udGFjdCBmb3JtID4gYnV0dG9uIHtcbiAgYWxpZ24tc2VsZjogY2VudGVyO1xuICBtYXJnaW4tdG9wOiAxNXB4O1xufVxuI2NvbnRhY3QgZm9ybSA+IGJ1dHRvbjpob3ZlciB7XG4gIGNvbG9yOiB3aGl0ZTtcbiAgYmFja2dyb3VuZC1jb2xvcjogYmxhY2s7XG59XG4vKkZvb3RlciovXG5mb290ZXIge1xuICB0ZXh0LWFsaWduOiBjZW50ZXI7XG4gIGJhY2tncm91bmQtY29sb3I6IGJsYWNrO1xuICBjb2xvcjogd2hpdGU7XG4gIHBhZGRpbmc6IDE1cHg7XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */</style></head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"><div><header><h1>John Doe</h1><ul class="navmenu"><li><a href="http://localhost:3000/#">About</a></li><li><a href="http://localhost:3000/#">Projects</a></li><li><a href="http://localhost:3000/#">Contact</a></li></ul></header><section id="about-me"><h1>Hello, my name is<span class="rotate text-important">John doe</span>,<br>and i make horrible websites.</h1><img class="avatar" src="./React App_files/John-Doe.44a7275f10ac29389f66.jpg" alt="jhon-doe"></section><section id="projects"><h2 class="text-important">Projects</h2><div class="projects-container"><div class="project-card"><img src="./React App_files/proj1(1).fa90dc93fb4576d9d1b6.jpg" alt="project"><h3>Project 1</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex natus quis beatae perspiciatis repellat laudantium aliquam.</p><p><a href="http://localhost:3000/#">Github Link</a></p></div><div class="project-card"><img src="./React App_files/proj2.8f972e344417be70ff92.jpg" alt="project"><h3>Project 2</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex natus quis beatae perspiciatis repellat laudantium aliquam.</p><p><a href="http://localhost:3000/#">Github Link</a></p></div><div class="project-card"><img src="./React App_files/proj3.2331cc943562ae1a9c03.jpg" alt="project"><h3>Project 3</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex natus quis beatae perspiciatis repellat laudantium aliquam.</p><p><a href="http://localhost:3000/#">Github Link</a></p></div><div class="project-card"><img src="./React App_files/proj4.da2bfe772a8cec40d338.jpg" alt="project"><h3>Project 4</h3><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus ex natus quis beatae perspiciatis repellat laudantium aliquam.</p><p><a href="http://localhost:3000/#">Github Link</a></p></div></div></section><section id="contact"><h2 class="text-important">contact me</h2><form><label>Full Name</label><input type="text" placeholder="Email"><label>Email</label><input type="email" placeholder="Email"><label>Message</label><textarea rows="5" cols="40"></textarea><button>Send</button></form></section><footer><p>Copyritghts © GOMYCODE 2020</p></footer></div></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  
+
+</body></html>
